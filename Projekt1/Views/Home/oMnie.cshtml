@@ -11,3 +11,17 @@
 
 <p>Stronka o mnie w umowie</p>
 
+<div style="font-size:20px;text-align:center;">
+    @{ 
+        foreach (var kontakt in ViewBag.Kontakty)
+        {
+            <p>
+                @kontakt.Imie @kontakt.Nazwisko, @kontakt.Miasto, ul. @kontakt.Ulica
+            </p>
+        }
+    }
+</div>
+
+<div>
+    
+</div>

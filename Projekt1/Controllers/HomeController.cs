@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekt1.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,6 +24,13 @@ namespace Projekt1.Controllers
         public ActionResult Omnie()
         {
             ViewBag.Message = "info o mnie i mojej stronie.";
+            List<Kontakt> kontakt = new List<Kontakt>()
+            {
+                new Kontakt("Staszek","Olejnik","Kraków","Tuchowska"),
+                new Kontakt("Irena","Wycisk","Warszawa","Pijana 12")
+            };
+
+            ViewBag.Kontakty = kontakt;
 
             return View();
         }

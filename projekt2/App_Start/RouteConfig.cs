@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Projekt1
+namespace projekt2
 {
     public class RouteConfig
     {
@@ -18,13 +18,6 @@ namespace Projekt1
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-
-            routes.MapRoute(
-                name:"Praca",
-                url: "{controler}/{action}/{id}",
-                defaults: new {controller = "Praca",action="Zdalna",
-                    id = UrlParameter.Optional}
-                );
         }
     }
 }
