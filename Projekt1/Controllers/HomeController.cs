@@ -20,6 +20,13 @@ namespace Projekt1.Controllers
             return View();
         }
 
+        public ActionResult Omnie()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
