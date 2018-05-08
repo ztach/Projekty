@@ -22,7 +22,7 @@ namespace Projekt1.Controllers
 
         public ActionResult Omnie()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "info o mnie i mojej stronie.";
 
             return View();
         }
