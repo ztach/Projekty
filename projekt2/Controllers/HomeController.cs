@@ -8,18 +8,10 @@ namespace projekt2.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home ActionResult 
+        // GET: Home
         public string Index()
         {
-            string wynik = "";
-            foreach (string routkey in RouteData.Values.Keys)
-            {
-                wynik += "klucz: " + routkey + " wartość: " + RouteData.Values[routkey].ToString();
-                wynik += "<br />";
-            }
-
-            return wynik;
-           // return "witaj Stachu";// View();
+            return "to ja stach";// View();
         }
     }
 }
