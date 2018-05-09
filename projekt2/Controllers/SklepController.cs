@@ -21,5 +21,6 @@ namespace projekt2.Controllers
         {
             return parametr;
         }
+
     }
 }
