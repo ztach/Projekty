@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Projekt1
+namespace projekt3
 {
     public class RouteConfig
     {
@@ -13,18 +13,18 @@ namespace Projekt1
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+            routes.MapRoute(
+                name: "Parametry",
+                url: "{par1}/{par2}/{par3}",
+                defaults: new { controller = "Home", action = "Parametry" }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-
-            routes.MapRoute(
-                name:"Praca",
-                url: "{controler}/{action}/{id}",
-                defaults: new {controller = "Praca",action="Zdalna",
-                    id = UrlParameter.Optional}
-                );
         }
     }
 }

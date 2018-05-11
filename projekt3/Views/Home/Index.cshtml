@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+    <div style="font-size: 18px;"> 
+        cześć Stazko
+    </div>
+<h2>Wpisz osobę:</h2>
+
+<form action="/Home/Parametry2" method="post">
+    <label for="Imie">Imię:</label>
+    <input type="text" name="Imie" id="Imie" />
+    
+    <label for="Nazwisko">Nazwisko:</label>
+    <input type="text" name="Nazwisko" id="Nazwisko" />
+
+    <label for="Age">Wiek:</label>
+    <input type="text" name="Age" id="Age" />
+
+    <input type="submit" value="WYŚLIJ" />
+</form>

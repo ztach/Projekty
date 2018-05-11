@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Projekt1
+
+namespace projekt2
 {
     public class RouteConfig
     {
@@ -13,18 +13,27 @@ namespace Projekt1
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();
+         
+
+            routes.MapRoute(
+                name: "SzczegolySamochod",
+                url: "samochod-{id}",
+                defaults: new {controller = "sklep",action="szczegoly"}            
+            );
+
+            routes.MapRoute(
+                name: "SamochodLista",
+                url: "model/{nazwa}",
+                defaults: new { controller = "sklep", action = "lista" },
+                constraints: new { nazwa=@"[\w]+" }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-
-            routes.MapRoute(
-                name:"Praca",
-                url: "{controler}/{action}/{id}",
-                defaults: new {controller = "Praca",action="Zdalna",
-                    id = UrlParameter.Optional}
-                );
         }
     }
 }
