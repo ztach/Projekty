@@ -1,9 +1,12 @@
 ﻿@model List<projekt4.Models.Person>
 
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutSzablon.cshtml";
 }
+
+
 <h2>Lista Person</h2>
 <br /><br />
 
@@ -35,8 +38,9 @@ else
     </p>
 }
 
-@section skrypty
+@section scripts
 {
-<script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
 }
+

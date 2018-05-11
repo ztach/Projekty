@@ -13,6 +13,27 @@ namespace projekt4
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+            routes.MapRoute(
+                name: "Omnie",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Omnie", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Contact",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+            );
+
+
+
+            routes.MapRoute(
+                name: "Create",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Create", id = UrlParameter.Optional }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

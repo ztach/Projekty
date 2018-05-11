@@ -1,0 +1,18 @@
+﻿@model projekt4.Models.Omnie
+
+@{
+    Layout = "~/Views/Shared/_LayoutSzablon.cshtml";
+}
+
+<h2>Informacje o mojej skromnej osobie</h2>
+
+<ul class="breadcrumb" style="width:100%">
+        <li class="nav-item" style="margin-right:5em;width:25%">
+            <p>Imię:  @Model.Imie</p>
+            <p>Nazwisko: @Model.Nazwisko</p>
+            <p>Email: <a href="http://onet.pl">@Model.Email</a> </p>
+        </li>
+
+</ul>
+
+
