@@ -23,8 +23,10 @@ namespace projekt3.Controllers
             
         public ActionResult Parametry2 (Person osoba)
         {
-            Response.Write(string.Format("Jesteś {0} {1} lat: {2}", osoba.Imie, osoba.Nazwisko, osoba.Age));
-            return View();
+            //Response.Write(string.Format("Jesteś {0} {1} lat: {2}", osoba.Imie, osoba.Nazwisko, osoba.Age));
+            //var text = (string.Format("Jesteś {0} {1} lat: {2}", osoba.Imie, osoba.Nazwisko, osoba.Age));
+            return Content(string.Format("Jesteś {0} {1} lat: {2}", osoba.Imie, osoba.Nazwisko, osoba.Age));
+
         }
 }
 }
