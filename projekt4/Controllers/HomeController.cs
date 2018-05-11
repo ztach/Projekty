@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projekt4.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,15 @@ namespace projekt4.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            List<Person> listPerson = new List<Person>() {
+                new Person() {Imie="Staszek",Nazwisko="Fiks",Age=32,Email="ztach@poczta.onet.pl"},
+                new Person() {Imie="Janek",Nazwisko="Piksowy",Age=28,Email="Janek.Piksowy@onet.pl"},
+                new Person() {Imie="Magdalena",Nazwisko="Optaszkowa",Age=28,Email="Madzia.Padzia@onet.pl"}
+            };
+
+            ViewBag.ListaPersons = listPerson;
+
+            return View(listPerson);
         }
 
         // GET: Home/Details/5
