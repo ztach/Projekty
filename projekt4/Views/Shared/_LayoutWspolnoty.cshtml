@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link href="~/Content/StyleMenuWspolnoty.css" rel="stylesheet" />
+</head>
+<body>
+
+    <ul class="breadcrumb">
+        
+            <li class="nav-item active">@Html.ActionLink("Wspólnoty", "Index", "Wspolnoty")</li>
+        
+            <li class="nav-item">@Html.ActionLink("Home", "Index", "Home")</li>
+        
+        @*    <div style="margin-right:40px;">
+            <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home")</li>
+        </div>
+        <div style="margin-right:40px;">
+            <li class="nav-item">@Html.ActionLink("Omnie", "Omnie", "Home")</li>
+        </div>*@
+    </ul>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+
+
+</body>
+</html>
+

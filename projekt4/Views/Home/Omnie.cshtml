@@ -6,13 +6,15 @@
 
 <h2>Informacje o mojej skromnej osobie</h2>
 
-<ul class="breadcrumb" style="width:100%">
-        <li class="nav-item" style="margin-right:5em;width:25%">
-            <p>Imię:  @Model.Imie</p>
-            <p>Nazwisko: @Model.Nazwisko</p>
+
+<section class="card-section">
+    <div class="card card-4">
+        <div class="plate">
+            @Model.Imie @Model.Nazwisko
+        </div>
+        <div class="subcard">
+            <p>Wiek: @Model.Age</p>
             <p>Email: <a href="http://onet.pl">@Model.Email</a> </p>
-        </li>
-
-</ul>
-
-
+            </div>
+        </div>
+</section>

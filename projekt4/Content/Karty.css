@@ -1,0 +1,66 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+.card-section {
+    background-color: #f7f8f8;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:row;
+}
+
+.card {
+    height: 160px;
+    width: 30%;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    color: rgba(90, 92, 107, 0.85);
+    text-align: center;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.plate {
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.card-1 .plate {
+    background: #997fbc;
+}
+
+.card-2 .plate {
+    background: #92ded2;
+}
+
+.card-3 .plate {
+    background: #fdc28a;
+}
+
+.card-4 .plate {
+    background: #ee8ebc;
+}
+
+.card-5 .plate {
+    background: #babc7f;
+}
+
+.card-6 .plate {
+    background: #7f7fbc;
+}
+
+.subcard {
+    margin: 10px;
+    color: rgba(90, 92, 107, 0.85);
+    text-align: center;
+    font-size: 16px;
+    overflow: hidden;
+}
