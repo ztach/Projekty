@@ -23,7 +23,17 @@ namespace projekt4.Controllers
             return View(listPerson);
         }
 
-         // GET: Home/Create
+
+        [ChildActionOnly]
+        public ActionResult PobierzGodzinePartial()
+        {
+            var czas = DateTime.Now.ToLongTimeString();
+            return PartialView("_PartialCzas", czas);
+        }
+
+
+
+        // GET: Home/Create
         public ActionResult Create()
         {
             return View();

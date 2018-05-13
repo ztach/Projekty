@@ -185,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DaneWspolneController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\WspolnotaValuesController.cs" />
     <Compile Include="Controllers\WspolnotyController.cs" />
@@ -211,6 +212,9 @@
     <Content Include="Views\Home\Omnie.cshtml" />
     <Content Include="Views\Shared\_LayoutWspolnoty.cshtml" />
     <Content Include="Views\Wspolnoty\Index.cshtml" />
+    <Content Include="Views\Partial\_Wspolnoty.cshtml" />
+    <Content Include="Views\Shared\_SubIndex.cshtml" />
+    <Content Include="Views\Shared\_PartialCzas.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -220,6 +224,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\DaneWspolne\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
