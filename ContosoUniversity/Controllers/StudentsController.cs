@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using ContosoUniversity.DAL;
 using ContosoUniversity.Models;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace ContosoUniversity.Controllers
 {
@@ -124,5 +121,9 @@ namespace ContosoUniversity.Controllers
             }
             base.Dispose(disposing);
         }
+        /*
+         connectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Repos\ContosoUniversity\DAL\ContosoUniversity.mdf;Integrated Security=True;Connect Timeout=30"
+         */
+
     }
 }
