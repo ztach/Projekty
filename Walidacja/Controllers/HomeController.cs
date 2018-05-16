@@ -18,7 +18,16 @@ namespace Walidacja.Controllers
         [HttpPost]
         public ActionResult Index(Pracownik pracownik)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View("Index", pracownik);
+            }
+            else
+            {
+                //zapisujemy do bazy
+                return View("Index");
+            }
+            
         }
     }
 }
