@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projekt2", "projekt2\projek
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projekt3", "projekt3\projekt3.csproj", "{86B84E44-216E-4B6B-B565-01D55E17E730}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walidacja", "Walidacja\Walidacja.csproj", "{CA416CF6-60F8-492D-B804-9452853F138A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walidacja.Tests", "Walidacja.Tests\Walidacja.Tests.csproj", "{7154BEDA-4CDC-4BA1-B2A3-256115D624C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{86B84E44-216E-4B6B-B565-01D55E17E730}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86B84E44-216E-4B6B-B565-01D55E17E730}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86B84E44-216E-4B6B-B565-01D55E17E730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA416CF6-60F8-492D-B804-9452853F138A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA416CF6-60F8-492D-B804-9452853F138A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA416CF6-60F8-492D-B804-9452853F138A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA416CF6-60F8-492D-B804-9452853F138A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7154BEDA-4CDC-4BA1-B2A3-256115D624C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7154BEDA-4CDC-4BA1-B2A3-256115D624C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7154BEDA-4CDC-4BA1-B2A3-256115D624C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7154BEDA-4CDC-4BA1-B2A3-256115D624C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
