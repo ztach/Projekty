@@ -27,14 +27,12 @@ namespace Walidacja.Models
         public string Email { get; set; }
 
         [Phone]
-        [Range(10,10, ErrorMessage ="telefon ma 10 cyfr")]
-        [RegularExpression(@"[0-9]*")]
+        /*[Range(10,10, ErrorMessage ="telefon ma 10 cyfr")]*/
+        [RegularExpression(@"[0-9]*", ErrorMessage = "telefon ma 10 cyfr")]
         public string NumerTelefonu { get; set; }
 
         [Display(Name = "Pytanie do szefa:")]
         [DataType(DataType.MultilineText)]
         public string Pytanie { get; set; }
-
-
     }
 }
